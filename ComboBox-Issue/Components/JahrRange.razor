@@ -1,0 +1,35 @@
+﻿<JahrInput @ref="startjahr" Label="Startjahr" OnValueChanged="@CheckStartJahr" />
+<JahrInput @ref="endJahr" Label="Bis" OnValueChanged="@CheckEndJahr" />
+
+@code {
+    JahrInput startjahr, endJahr;
+
+    private void CheckStartJahr(int jahr)
+    {
+        if (jahr > EndJahr)
+        {
+            EndJahr = jahr;
+            StateHasChanged();
+        }
+    }
+
+    private void CheckEndJahr(int jahr)
+    {
+        if (EndJahr < StartJahr)
+        {
+            StartJahr = jahr;
+            StateHasChanged();
+        }
+    }
+
+    public int StartJahr
+    {
+        get => startjahr.Jahr;
+        set => startjahr.SetJahr(value);
+    }
+    public int EndJahr
+    {
+        get => endJahr.Jahr;
+        set => endJahr.SetJahr(value);
+    }
+}

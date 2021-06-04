@@ -1,0 +1,37 @@
+﻿@using BlazorStrap
+
+<FormItemBase Label="@Label" @ref="ItemBase">
+    <Content>
+        <BSBasicInput Id="@ItemBase.Id" InputType="BlazorStrap.InputType.Number" style="width: 50px;" @bind-Value="@Jahr" min="@MinValue" max="@MaxValue"></BSBasicInput>
+    </Content>
+</FormItemBase>
+@code {
+    private FormItemBase ItemBase { get; set; }
+
+    [Parameter]
+    public string Label { get; set; } = "Jahr";
+
+    [Parameter]
+    public int? MinValue { get; set; } = 1950;
+
+    [Parameter]
+    public int? MaxValue { get; set; } = 2100;
+
+    [Parameter]
+    public Action<int> OnValueChanged { get; set; }
+
+    int _jahr = DateTime.Now.Year;
+
+    [Parameter]
+    public int Jahr
+    {
+        get { return _jahr; }
+        set
+        {
+            _jahr = value;
+            OnValueChanged?.Invoke(value);
+        }
+    }
+
+    public void SetJahr(int jahr) => Jahr = jahr;
+}

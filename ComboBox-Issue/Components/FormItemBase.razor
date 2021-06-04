@@ -1,0 +1,33 @@
+﻿@using BlazorStrap
+<div class="row mt-2">
+    <BSCol XS="@LeftCol" class="text-right pt-2 p-0" style="font-size: 12px;">
+        <BSLabel For="@Id">@Label<span class="info-icon" alt="info" title="@Description"></span></BSLabel>
+    </BSCol>
+    <BSCol XS="@RightCol" class="pt-1">
+        @Content
+    </BSCol>
+</div>
+
+@code {
+    private const int BOOTSTRAP_GRID_COLUMNS = 12;
+    private const int _LeftCol = 4;
+    private string LeftCol = $"{_LeftCol}";
+    private string RightCol = $"{BOOTSTRAP_GRID_COLUMNS - _LeftCol}";
+
+    [Parameter]
+    public string Id { get; set; } = RandomId;
+
+    [Parameter]
+    public string Label { get; set; } = "Label";
+
+    [Parameter]
+    public string Description { get; set; } = "";
+
+    [Parameter]
+    public RenderFragment Content { get; set; }
+
+    private static string RandomId
+    {
+        get { return Guid.NewGuid().ToString(); }
+    }
+}

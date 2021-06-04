@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\t.markus.FAO20\source\repos\ComboBox-Issue\ComboBox-Issue\bin\Release\net6.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\t.markus.FAO20\source\repos\ComboBox-Issue\ComboBox-Issue\obj\Release\net6.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/BlazorStrap" Path="C:\Users\t.markus.FAO20\.nuget\packages\blazorstrap\1.5.1\build\..\staticwebassets\" />
+</StaticWebAssets>
