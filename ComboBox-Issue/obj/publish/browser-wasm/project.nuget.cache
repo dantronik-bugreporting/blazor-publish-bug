@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fKmpD1rR0viFZPygn1tBmFYcU5AxkgFGmJBlMGWUfJTmviCWzbDbiYa3Uu9KuD23rfyhgRHxfjrulFE9lgnX+w==",
+  "dgSpecHash": "JYItgj4704Q5TBioqRXF9c85k3kL39dYTub0Skkx6Blub1Lle7kwlgMsxVXmdIuSVpRinP2TC/C1vBqvWQwFfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\t.markus.FAO20\\source\\repos\\ComboBox-Issue\\ComboBox-Issue\\ComboBox-Issue.csproj",
+  "projectFilePath": "C:\\Users\\t.markus.FAO20\\Source\\Repos\\blazor-publish-bug\\ComboBox-Issue\\ComboBox-Issue.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\t.markus.FAO20\\.nuget\\packages\\blazorcomponentutilities\\1.6.0\\blazorcomponentutilities.1.6.0.nupkg.sha512",
     "C:\\Users\\t.markus.FAO20\\.nuget\\packages\\blazorstrap\\1.5.1\\blazorstrap.1.5.1.nupkg.sha512",
